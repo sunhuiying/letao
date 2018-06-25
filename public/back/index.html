@@ -1,10 +1,89 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>乐淘电商</title>
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
 </head>
 <body>
-后台管理系统
+
+<!--侧边栏-->
+<div class="lt_aside">
+  <!--标题-->
+  <div class="brand">
+    <a href="#">乐淘电商</a>
+  </div>
+
+  <!--用户头像-->
+  <div class="user">
+    <a href="#"><img src="./images/default.png" alt=""></a>
+    <p>超级管理员</p>
+  </div>
+
+  <!--信息导航-->
+  <div class="nav">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="glyphicon glyphicon-user"></i>
+          <span>用户管理</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="glyphicon glyphicon-list"></i>
+          <span>分类管理</span>
+      </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="glyphicon glyphicon-tags"></i>
+          <span>商品管理</span>
+        </a>
+
+        <div class="child" style="display: none">
+          <a href="#">一级分类</a>
+          <a href="#">二级分类</a>
+        </div>
+      </li>
+
+    </ul>
+
+
+
+
+  </div>
+</div>
+
+<!--主体部分-->
+<div class="lt_main">
+  <!--公共头部-->
+  <div class="lt_topbar">
+    <a href="#" class="pull-left icon-menu">
+      <i class="glyphicon glyphicon-align-justify"></i>
+    </a>
+    <a href="#" class="pull-right icon-logout">
+      <i class="glyphicon glyphicon-log-out"></i>
+    </a>
+  </div>
+  <!--流式布局容器,有默认左右padding15px-->
+  <div class="container-fluid">
+    <!--路径导航-->
+    <ol class="breadcrumb">
+      <li><a href="index.html">管理系统</a></li>
+      <li class="active">首页</li>
+    </ol>
+  </div>
+</div>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="./lib/nprogress/nprogress.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/login.js"></script>
+
 </body>
 </html>
