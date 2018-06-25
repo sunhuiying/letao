@@ -1,3 +1,18 @@
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+ ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.red {
+  color: #A94442;
+}
+
 .body_bg {
   background: #222D32;
 }
@@ -23,8 +38,11 @@
   height: 100%;
   background: #222D32;
   z-index: 999;
+  transition: all 1s;
 }
-
+.lt_aside.hidemenu {
+  left: -180px;
+}
 .lt_aside .brand a {
   display: block;
   font-size: 20px;
@@ -58,21 +76,24 @@
 
 /*信息导航*/
 .lt_aside .nav a {
-  height: 40px;
-  width: 100%;
-  line-height: 40px;
   display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
   color: #fff;
-  text-decoration: none;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
 }
-.lt_aside .nav ul {
-  list-style: none;
+.lt_aside .nav a.current {
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
 }
+
 .lt_aside .nav span {
   padding-left: 5px;
 }
-.lt_aside .nav .child {
-  padding-left: 20px;
+.lt_aside .nav .child a{
+  padding-left: 60px;
 }
 
 /*主体部分*/
@@ -82,8 +103,11 @@
   padding-left: 180px;
   background: pink;
   padding-top: 50px;
+  transition: all 1s;
 }
-
+.lt_main.hidemenu {
+  padding-left: 0;
+}
 .lt_main .lt_topbar {
   position: fixed;
   top: 0;
@@ -92,9 +116,11 @@
   height: 50px;
   background: #3C8DBC;
   padding-left: 180px;
-
+  transition: all 1s;
 }
-
+.lt_topbar.hidemenu {
+  padding-left: 0;
+}
 .lt_main .lt_topbar .icon-menu,
 .lt_main .lt_topbar .icon-logout {
   display: block;
@@ -112,3 +138,4 @@
 .lt_main .breadcrumb a {
   text-decoration: none;
 }
+
