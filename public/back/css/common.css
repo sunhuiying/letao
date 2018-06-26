@@ -20,6 +20,10 @@ a:active {
 .mt_150 {
   margin-top: 150px;
 }
+.mb_20 {
+
+  margin-bottom: 20px;
+}
 
 .panel .panel-heading {
   font-size: 20px;
@@ -101,7 +105,6 @@ a:active {
   width: 100%;
   height: 1000px;
   padding-left: 180px;
-  background: pink;
   padding-top: 50px;
   transition: all 1s;
 }
@@ -117,6 +120,7 @@ a:active {
   background: #3C8DBC;
   padding-left: 180px;
   transition: all 1s;
+  z-index: 666;
 }
 .lt_topbar.hidemenu {
   padding-left: 0;
@@ -137,5 +141,19 @@ a:active {
 }
 .lt_main .breadcrumb a {
   text-decoration: none;
+}
+
+/*图表*/
+.echarts_1,
+.echarts_2 {
+  width: 48%;
+  height: 400px;
+}
+
+/*表格文字居中*/
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
 }
 
